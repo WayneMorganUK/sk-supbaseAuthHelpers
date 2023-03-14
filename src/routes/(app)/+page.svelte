@@ -25,7 +25,7 @@
 		{#if form?.error}
 			<div class="block notification is-danger">{form.error}</div>
 		{/if}
-		<form method="post" use:enhance={handleSubmit}>
+		<form id='form1' method="post" use:enhance={handleSubmit}>
 			<div class="field">
 				<label for="email" class="label">Email</label>
 				<p class="control">

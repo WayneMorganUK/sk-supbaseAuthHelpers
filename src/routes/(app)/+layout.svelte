@@ -29,7 +29,7 @@
 		</div>
 		<div class="navbar-end">
 			{#if $page.data.session}
-				<form action="/logout" method="post" use:enhance={handleLogout}>
+				<form id='form1' action="/logout" method="post" use:enhance={handleLogout}>
 					<button disabled={loading} type="submit">Sign out</button>
 				</form>
 			{/if}
